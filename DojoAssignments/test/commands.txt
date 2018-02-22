@@ -1,0 +1,14 @@
+command space
+open terminal
+cd Desktop
+mkdir test
+touch index.html
+touch style.css
+touch command.txt
+cp index.html index_2.html
+cd test
+rm style.css
+cd Desktop
+mv index_2.html test destination
+ls
+rm destination

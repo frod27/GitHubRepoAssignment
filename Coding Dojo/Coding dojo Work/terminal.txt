@@ -1,0 +1,176 @@
+Last login: Tue Feb 20 17:43:20 on ttys000
+Franciscos-MacBook-Air:~ franciscorodriguez$ ls
+Applications	Downloads	Music		Terminal_folder	codingdojo
+Desktop		Library		Pictures	Untitled.txt	gitfile
+Documents	Movies		Public		codebasics	neuromath.txt
+Franciscos-MacBook-Air:~ franciscorodriguez$ cd desktop
+Franciscos-MacBook-Air:desktop franciscorodriguez$ mkdir new_project
+Franciscos-MacBook-Air:desktop franciscorodriguez$ cd new_project
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git init
+Initialized empty Git repository in /Users/franciscorodriguez/Desktop/new_project/.git/
+Franciscos-MacBook-Air:new_project franciscorodriguez$ touch aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	aboutMe.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git add aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git commit -m "aboutMe.txt added"
+[master (root-commit) c2cef20] aboutMe.txt added
+ Committer: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git log
+commit c2cef20f8d4e7c30f4e0fc4ada79fcd337468b5f (HEAD -> master)
+Author: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Date:   Tue Feb 20 18:45:27 2018 -0800
+
+    aboutMe.txt added
+Franciscos-MacBook-Air:new_project franciscorodriguez$ vi aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git log
+commit c2cef20f8d4e7c30f4e0fc4ada79fcd337468b5f (HEAD -> master)
+Author: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Date:   Tue Feb 20 18:45:27 2018 -0800
+
+    aboutMe.txt added
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git add aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git commit -m"added our favorite quote"
+[master 82f74cc] added our favorite quote
+ Committer: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git log
+commit 82f74cc9379fc6f228532fbdcf7f9f3e08b8aacf (HEAD -> master)
+Author: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Date:   Tue Feb 20 18:58:24 2018 -0800
+
+    added our favorite quote
+
+commit c2cef20f8d4e7c30f4e0fc4ada79fcd337468b5f
+Author: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Date:   Tue Feb 20 18:45:27 2018 -0800
+
+    aboutMe.txt added
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git reset
+Franciscos-MacBook-Air:new_project franciscorodriguez$ git reset 6c77676 --hard
+fatal: ambiguous argument '6c77676': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+Franciscos-MacBook-Air:new_project franciscorodriguez$ ls
+aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ clear
+
+Franciscos-MacBook-Air:new_project franciscorodriguez$ ls
+aboutMe.txt
+Franciscos-MacBook-Air:new_project franciscorodriguez$ cd ..
+Franciscos-MacBook-Air:desktop franciscorodriguez$ mkdir gittest
+Franciscos-MacBook-Air:desktop franciscorodriguez$ cd gittest
+Franciscos-MacBook-Air:gittest franciscorodriguez$ touch index.html
+Franciscos-MacBook-Air:gittest franciscorodriguez$ touch style.css
+Franciscos-MacBook-Air:gittest franciscorodriguez$ touch aboutMe.txt
+Franciscos-MacBook-Air:gittest franciscorodriguez$ -m
+-bash: -m: command not found
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git commit -m
+fatal: Not a git repository (or any of the parent directories): .git
+Franciscos-MacBook-Air:gittest franciscorodriguez$ ls
+aboutMe.txt	index.html	style.css
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git init
+Initialized empty Git repository in /Users/franciscorodriguez/Desktop/gittest/.git/
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	style.css
+
+nothing added to commit but untracked files present
+Franciscos-MacBook-Air:gittest franciscorodriguez$ cd aboutMe.txt
+-bash: cd: aboutMe.txt: Not a directory
+Franciscos-MacBook-Air:gittest franciscorodriguez$ vi aboutMe.txt
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	style.css
+
+nothing added to commit but untracked files present
+Franciscos-MacBook-Air:gittest franciscorodriguez$ vi aboutMe.txt
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git commit -m"aboutMe.txt added"
+On branch master
+
+Initial commit
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	style.css
+
+nothing added to commit but untracked files present
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git log
+fatal: your current branch 'master' does not have any commits yet
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git commit -m "aboutMe.txt added"
+On branch master
+
+Initial commit
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	style.css
+
+nothing added to commit but untracked files present
+Franciscos-MacBook-Air:gittest franciscorodriguez$ git revert -n HEAD
+fatal: bad revision 'HEAD'
+Franciscos-MacBook-Air:gittest franciscorodriguez$ 

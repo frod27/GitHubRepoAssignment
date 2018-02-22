@@ -1,0 +1,121 @@
+The following are my steps to completing the GitHub Repo assignment
+
+Last login: Tue Feb 20 18:40:00 on ttys000
+Franciscos-MacBook-Air:~ franciscorodriguez$ mkdir git_practice
+Franciscos-MacBook-Air:~ franciscorodriguez$ cd git_practice
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ git remote add origin https://github.com/frod27/git_practice.git
+fatal: Not a git repository (or any of the parent directories): .git
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ git push -u origin master
+fatal: Not a git repository (or any of the parent directories): .git
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ git push -u origin master
+fatal: Not a git repository (or any of the parent directories): .git
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ ls
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ ls
+Franciscos-MacBook-Air:git_practice franciscorodriguez$ cd ..
+Franciscos-MacBook-Air:~ franciscorodriguez$ ls
+Applications	Library		Public		codingdojo
+Desktop		Movies		Terminal_folder	git_practice
+Documents	Music		Untitled.txt	gitfile
+Downloads	Pictures	codebasics	neuromath.txt
+Franciscos-MacBook-Air:~ franciscorodriguez$ cd desktop
+Franciscos-MacBook-Air:desktop franciscorodriguez$ mkdir GitHubRepoAssignment
+Franciscos-MacBook-Air:desktop franciscorodriguez$ git init
+Initialized empty Git repository in /Users/franciscorodriguez/Desktop/.git/
+Franciscos-MacBook-Air:desktop franciscorodriguez$ touch readme.md
+Franciscos-MacBook-Air:desktop franciscorodriguez$ cd GitHubRepoAssignment
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ touch readme.md
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ vi readme.md
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../.DS_Store
+	../.localized
+	../Coding Dojo/
+	../College papers/
+	../DojoAssignments/
+	./
+	../Google Chrome
+	../Slack.app/
+	../Stickies
+	../The Future/
+	../The Shit Show/
+	../Visual Studio Code.app/
+	../new_project/
+	../test/
+	../~$glish 105 AA.docx
+	../~$ilosophy.docx
+	../~$rgin Questions 2.docx
+	../~$search Paper.docx
+	../~$ter A Storm the Sun Will Rise.docx
+	../~$tlines.docx
+	../~$to 4 questions.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git add .
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git commit -m "Too tired to know what I'm doing"
+[master (root-commit) 715165b] Too tired to know what I'm doing
+ Committer: Francisco rodriguez <franciscorodriguez@Franciscos-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 28 insertions(+)
+ create mode 100644 GitHubRepoAssignment/readme.md
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ clear
+
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../.DS_Store
+	../.localized
+	../Coding Dojo/
+	../College papers/
+	../DojoAssignments/
+	../Google Chrome
+	../Slack.app/
+	../Stickies
+	../The Future/
+	../The Shit Show/
+	../Visual Studio Code.app/
+	../new_project/
+	../test/
+	../~$glish 105 AA.docx
+	../~$ilosophy.docx
+	../~$rgin Questions 2.docx
+	../~$search Paper.docx
+	../~$ter A Storm the Sun Will Rise.docx
+	../~$tlines.docx
+	../~$to 4 questions.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ ls
+readme.md
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git remote add origin https://github.com/frod27/GitHubRepoAssignment.git
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ git push -u origin master
+Username for 'https://github.com': frod27
+Password for 'https://frod27@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 767 bytes | 767.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/frod27/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Franciscos-MacBook-Air:GitHubRepoAssignment franciscorodriguez$ 
+
